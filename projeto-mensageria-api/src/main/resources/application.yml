@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    #driver-class-name: org.postgresql.Driver #drive utilizado para o banco postgresql
+    #url: jdbc:postgresql://localhost:5432/postgres #url para acesso ao banco postgresql
+    #username: postgres
+    #password: postgres
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver #drive utilizado para o banco sqlserver
+    url: jdbc:sqlserver://localhost:1433 #url para acesso ao banco sqlserver
+    username: sa
+    password: P@ssword123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none #indica para o hibernate não realizar as operações de definição de estrutura, pois agora quem controla isso é o liquibase
+  liquibase:
+    change-log: classpath:/migration/database/master.xml
+    database-change-log-lock-table: DATABASECHANGLOG
+
+server:
+  port: 8075
+
+security:
+  jwt:
+    validity: 10000
+    chave-assinatura: CHAVESECRETA

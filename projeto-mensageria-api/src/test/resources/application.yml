@@ -1,0 +1,48 @@
+security:
+  jwt:
+    validity: 10000
+    chave-assinatura: TESTE
+
+spring:
+  application:
+    name: projeto-base
+    auth:
+      secret-key: MY_SECRET
+      token-validity: 3600000
+  datasource:
+    driver-class-name: org.h2.Driver
+    name: projetobase
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+      format_sql: true
+    show-sql: true
+    format_sql: true
+    properties:
+      hibernate:
+        search:
+          enabled: false
+  liquibase:
+    change-log: "classpath:/migration/database/master.xml"
+    enabled: true
+  profiles:
+    default: test
+    active: test
+
+logging:
+  path: target
+  level:
+    liquibase: ERROR
+    h2: OFF
+    root: OFF
+    org:
+      springframework: OFF
+      camunda: OFF
+      eclipse: OFF

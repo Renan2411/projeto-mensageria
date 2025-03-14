@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="001-tabela-usuario" author="renan.duarte">
+        <sqlFile dbms="mssql" encoding="utf8" path="mssql/001-tabela-usuario.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+        <sqlFile dbms="postgresql" encoding="utf8" path="postgresql/001-tabela-usuario.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+
+    <changeSet id="002-tabela-roles" author="renan.duarte">
+        <sqlFile dbms="mssql" encoding="utf8" path="mssql/002-tabela-roles.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+        <sqlFile dbms="postgresql" encoding="utf8" path="postgresql/002-tabela-roles.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+
+    <changeSet id="003-tabela-user-role" author="renan.duarte">
+        <sqlFile dbms="mssql" encoding="utf8" path="mssql/003-tabela-user-role.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+        <sqlFile dbms="postgresql" encoding="utf8" path="postgresql/003-tabela-user-role.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+
+    <changeSet id="004-roles-padrao" author="renan.duarte">
+        <sqlFile dbms="mssql" encoding="utf8" path="mssql/004-roles-padrao.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+        <sqlFile dbms="postgresql" encoding="utf8" path="postgresql/004-roles-padrao.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+
+</databaseChangeLog>
