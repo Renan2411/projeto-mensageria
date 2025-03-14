@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51b4a4f7-c78f-4bc5-b322-e23d606d1155" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/mensagem/MensagemDataProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/mensagem/MensagemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/entity/MensagemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/interfaces/dataprovider/IMensagemDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/resources/migration/database/mssql/005-tabela-mensagem.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/ProjetoBaseApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/ProjetoMensageriaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/controller/auth/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/auth/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/controller/exception/GeneralExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/exception/GeneralExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/controller/usuario/BuscarUsuarioPorIdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/usuario/BuscarUsuarioPorIdController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/controller/usuario/CriarUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/usuario/CriarUsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/controller/usuario/EditarUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/usuario/EditarUsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/controller/usuario/ExcluirUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/usuario/ExcluirUsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/dataprovider/roles/RolesDataProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/roles/RolesDataProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/dataprovider/roles/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/roles/RolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/dataprovider/usuario/UsuarioDataProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/usuario/UsuarioDataProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/dataprovider/usuario/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/usuario/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/dataprovider/usuarioRole/UsuarioRoleDataProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/usuarioRole/UsuarioRoleDataProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/adapter/gateway/dataprovider/usuarioRole/UsuarioRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/usuarioRole/UsuarioRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/config/CorsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/CorsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/config/auth/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/auth/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/config/auth/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/auth/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/config/auth/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/auth/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/factory/auth/LoginUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/factory/auth/LoginUseCaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/factory/usuario/BuscarUsuarioPorIdUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/factory/usuario/BuscarUsuarioPorIdUseCaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/factory/usuario/CriarUsuarioUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/factory/usuario/CriarUsuarioUseCaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/factory/usuario/EditarUsuarioUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/factory/usuario/EditarUsuarioUseCaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/application/factory/usuario/ExcluirUsuarioUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/factory/usuario/ExcluirUsuarioUseCaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/entity/RolesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/entity/RolesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/entity/UsuarioEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/entity/UsuarioRoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/entity/UsuarioRoleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/exception/TokenInvalidoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/exception/TokenInvalidoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/exception/UsuarioNaoEncontradoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/exception/UsuarioNaoEncontradoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/exception/generic/GenericAuthenticationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/exception/generic/GenericAuthenticationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/exception/generic/GenericNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/exception/generic/GenericNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/exception/generic/GenericValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/exception/generic/GenericValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/exception/generic/GenericValidationExceptionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/exception/generic/GenericValidationExceptionList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/interfaces/dataprovider/IRolesDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/interfaces/dataprovider/IRolesDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/interfaces/dataprovider/IUsuarioDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/interfaces/dataprovider/IUsuarioDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/interfaces/dataprovider/IUsuarioRoleDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/interfaces/dataprovider/IUsuarioRoleDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/auth/LoginInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/auth/LoginInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/auth/LoginOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/auth/LoginOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/auth/LoginUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/auth/LoginUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/auth/converter/LoginOutputConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/auth/converter/LoginOutputConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/buscarporid/BuscarUsuarioPorIdOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/buscarporid/BuscarUsuarioPorIdOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/buscarporid/BuscarUsuarioPorIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/buscarporid/BuscarUsuarioPorIdUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/criar/CriarUsuarioInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/criar/CriarUsuarioInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/criar/CriarUsuarioOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/criar/CriarUsuarioOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/criar/CriarUsuarioUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/criar/CriarUsuarioUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/criar/converter/CriarUsuarioOutputConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/criar/converter/CriarUsuarioOutputConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/editar/EditarUsuarioInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/editar/EditarUsuarioInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/editar/EditarUsuarioOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/editar/EditarUsuarioOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/editar/EditarUsuarioUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/editar/EditarUsuarioUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/editar/converter/EditarUsuarioOutputConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/editar/converter/EditarUsuarioOutputConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/usecase/usuario/excluir/ExcluirUsuarioUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/usuario/excluir/ExcluirUsuarioUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetobase/domain/validation/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/validation/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetobase/adapter/gateway/controller/usuario/BuscarUsuarioPorIdControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetomensageria/adapter/gateway/controller/usuario/BuscarUsuarioPorIdControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetobase/adapter/gateway/controller/usuario/CriarUsuarioControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetomensageria/adapter/gateway/controller/usuario/CriarUsuarioControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetobase/adapter/gateway/controller/usuario/EditarUsuarioControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetomensageria/adapter/gateway/controller/usuario/EditarUsuarioControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetobase/adapter/gateway/controller/usuario/ExcluirUsuarioControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetomensageria/adapter/gateway/controller/usuario/ExcluirUsuarioControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetobase/domain/usecase/usuario/criar/CriarUsuarioUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetomensageria/domain/usecase/usuario/criar/CriarUsuarioUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetobase/domain/usecase/usuario/editar/EditarUsuarioUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetomensageria/domain/usecase/usuario/editar/EditarUsuarioUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetobase/helper/JsonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/test/java/br/com/projetomensageria/helper/JsonHelper.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2uHklldMuCbua2fBXARLALvD6Na" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/az/Documentos/projeto-mensageria",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ProjetoMensageriaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="projeto-base-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.projetomensageria.ProjetoMensageriaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-bfa3237e" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51b4a4f7-c78f-4bc5-b322-e23d606d1155" name="Changes" comment="" />
+      <created>1741913040774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741913040774</updated>
+      <workItem from="1741913041827" duration="2966000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

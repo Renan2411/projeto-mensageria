@@ -1,6 +1,18 @@
 version: "3.8"
 services:
   # Database Server
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_management
+    ports:
+      - 25672:25672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER = admin
+      - RABBITMQ_DEFAULT_PASS = passw123
+    restart: always
+    volumes:
+      - /dokcer_conf/rabbitmq/data/:/var/lib/rabbitmq
   database:
     #    image: mariadb
     #    ports:
@@ -32,3 +44,6 @@ services:
 #      - db-data:/var/lib/postgresql/
 volumes:
   db-data: ~
+  logs-folder:
+    name: ${log_rabbitmq_management}
+    driver: local
