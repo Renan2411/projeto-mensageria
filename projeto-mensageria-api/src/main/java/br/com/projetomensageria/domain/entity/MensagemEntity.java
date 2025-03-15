@@ -12,6 +12,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
@@ -33,11 +34,11 @@ public class MensagemEntity {
     private Long id;
 
     @ManyToOne
-    @Column(name = "US_ID_REMETENTE")
+    @JoinColumn(name = "US_ID_REMETENTE")
     private UsuarioEntity usuarioEntityRemetente;
 
     @ManyToOne
-    @Column(name = "US_ID_DESTINATARIO")
+    @JoinColumn(name = "US_ID_DESTINATARIO")
     private UsuarioEntity usuarioEntityDestinatario;
 
     @Column(name = "MS_CONTEUDO")
