@@ -15,7 +15,6 @@ public class Runner implements CommandLineRunner {
     private final RabbitTemplate rabbitTemplate;
     private final Receiver receiver;
 
-
     @Override
     public void run(String... args) throws Exception {
         System.out.println("Sendin message...");

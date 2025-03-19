@@ -1,4 +1,11 @@
 spring:
+  rabbitmq:
+    host: 172.21.0.2
+    port: 5672
+    username: admin
+    password: admin
+  profiles:
+    active: desenv
   datasource:
     #driver-class-name: org.postgresql.Driver #drive utilizado para o banco postgresql
     #url: jdbc:postgresql://localhost:5432/postgres #url para acesso ao banco postgresql
