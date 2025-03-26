@@ -14,6 +14,8 @@ public class Receiver {
         latch.countDown();
     }
 
+//   a
+
     public CountDownLatch getLatch() {
         return latch;
     }

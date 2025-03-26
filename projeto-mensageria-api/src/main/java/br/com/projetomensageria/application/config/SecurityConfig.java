@@ -4,6 +4,7 @@ import br.com.projetomensageria.application.config.auth.CustomUserDetailService;
 import br.com.projetomensageria.application.config.auth.JwtAuthFilter;
 import br.com.projetomensageria.application.config.auth.JwtService;
 import br.com.projetomensageria.domain.entity.RolesEntity;
+import br.com.projetomensageria.domain.interfaces.dataprovider.IUsuarioDataProvider;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
@@ -23,6 +24,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private CustomUserDetailService customUserDetailService;
+    private IUsuarioDataProvider iUsuarioDataProvider;
     private JwtService jwtService;
     private Environment environment;
 
@@ -33,7 +35,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public OncePerRequestFilter jwtFilter() {
-        return new JwtAuthFilter(jwtService, customUserDetailService, environment);
+        return new JwtAuthFilter(jwtService, iUsuarioDataProvider, customUserDetailService, environment);
     }
 
     @Override

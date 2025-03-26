@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b4a4f7-c78f-4bc5-b322-e23d606d1155" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/mensageria/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/mensageria/Runner.java" afterDir="false" />
+    <list default="true" id="51b4a4f7-c78f-4bc5-b322-e23d606d1155" name="Changes" comment="[CONFIGURATION]: Configuração inicial Rabbitmq">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/mensagem/CriarMensagemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/RabbitmlConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/factory/mensagem/CriarMensagemUseCaseFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/mensageria/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/entity/dto/MensagemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/mensagem/criar/CriarMensagemInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/mensagem/criar/CriarMensagemUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/mensagem/processar/ProcessarMensagemUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/ProjetoMensageriaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/ProjetoMensageriaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/mensagem/MensagemDataProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/mensagem/MensagemDataProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/auth/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/auth/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/mensageria/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/mensageria/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/mensageria/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/entity/MensagemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/entity/MensagemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/interfaces/dataprovider/IMensagemDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/interfaces/dataprovider/IMensagemDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/auth/LoginUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/auth/LoginUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/resources/migration/database/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/resources/migration/database/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/resources/migration/database/mssql/005-tabela-mensagem.sql" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/resources/migration/database/mssql/005-tabela-mensagem.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,27 +54,37 @@
 }</component>
   <component name="ProjectId" id="2uHklldMuCbua2fBXARLALvD6Na" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.projeto-base-api [clean].executor": "Run",
-    "Maven.projeto-base-api [install].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ProjetoMensageriaApplication.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/az/Documentos/projeto-mensageria",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.projeto-base-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.projeto-base-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ProjetoMensageriaApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/az/Documentos/projeto-mensageria&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ProjetoMensageriaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="projeto-base-api" />
@@ -85,11 +110,46 @@
       <option name="presentableId" value="Default" />
       <updated>1741913040774</updated>
       <workItem from="1741913041827" duration="2966000" />
-      <workItem from="1742070742776" duration="2087000" />
+      <workItem from="1742070742776" duration="2453000" />
+      <workItem from="1742343694641" duration="4730000" />
+      <workItem from="1742519173236" duration="1941000" />
+      <workItem from="1742674787302" duration="363000" />
+      <workItem from="1742676485810" duration="1051000" />
+      <workItem from="1742863078967" duration="4777000" />
+      <workItem from="1742949709814" duration="2193000" />
     </task>
+    <task id="LOCAL-00001" summary="[CONFIGURATION]: Configuração inicial Rabbitmq">
+      <option name="closed" value="true" />
+      <created>1742073194691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742073194691</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[CONFIGURATION]: Configuração inicial Rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="[CONFIGURATION]: Configuração inicial Rabbitmq" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/mensagem/processar/ProcessarMensagemUseCase.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

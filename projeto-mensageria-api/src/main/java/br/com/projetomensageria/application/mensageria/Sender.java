@@ -1,25 +1,25 @@
 package br.com.projetomensageria.application.mensageria;
 
-import br.com.projetomensageria.ProjetoMensageriaApplication;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
+@Slf4j
 @Component
 @AllArgsConstructor
-public class Runner implements CommandLineRunner {
+public class Sender {
 
     private final RabbitTemplate rabbitTemplate;
     private final Receiver receiver;
 
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println("Sendin message...");
-
-        rabbitTemplate.convertAndSend(ProjetoMensageriaApplication.topicExchangeName, "foo.bar.baz", "Hello from RabbitMQ!");
+    public void enviar(String exchange, String routKey, Object mensagem) throws InterruptedException {
+        log.info("=============ENVIANDO MENSAGEM, CONTEUDO = { " + mensagem + "}==========");
+        rabbitTemplate.convertAndSend(exchange, routKey, mensagem);
+        log.info("=======MENSAGEM ENVIADA=======");
         receiver.getLatch().await(1000, TimeUnit.MILLISECONDS);
     }
+
 }

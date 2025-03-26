@@ -1,6 +1,7 @@
 package br.com.projetomensageria.domain.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -21,6 +22,7 @@ import java.time.OffsetDateTime;
 
 @Data
 @Entity
+@Builder
 @NoArgsConstructor
 @EqualsAndHashCode
 @AllArgsConstructor
@@ -50,6 +52,9 @@ public class MensagemEntity {
 
     @Column(name = "MS_DTHR_ENVIO")
     private OffsetDateTime dataHoraEnvio;
+
+    @Column(name = "MS_LOG_ERRO")
+    private String logErro;
 
     public enum EnumSituacao {
         PROCESSANDO,

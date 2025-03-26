@@ -32,4 +32,9 @@
                  relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
     </changeSet>
 
+    <changeSet id="005-tabela-mensagem" author="renan.duarte">
+        <sqlFile dbms="mssql" encoding="utf8" path="mssql/005-tabela-mensagem.sql"
+                 relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+
 </databaseChangeLog>

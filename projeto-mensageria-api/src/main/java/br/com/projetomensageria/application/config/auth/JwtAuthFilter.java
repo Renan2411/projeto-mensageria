@@ -1,6 +1,8 @@
 package br.com.projetomensageria.application.config.auth;
 
+import br.com.projetomensageria.domain.entity.UsuarioEntity;
 import br.com.projetomensageria.domain.exception.TokenInvalidoException;
+import br.com.projetomensageria.domain.interfaces.dataprovider.IUsuarioDataProvider;
 import lombok.AllArgsConstructor;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpMethod;
@@ -20,6 +22,7 @@ import java.io.IOException;
 public class JwtAuthFilter extends OncePerRequestFilter {
 
     private JwtService jwtService;
+    private IUsuarioDataProvider iUsuarioDataProvider;
     private CustomUserDetailService customUserDetailService;
     private Environment environment;
     private static final String URL_LOGIN = "/login";
@@ -49,8 +52,9 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         }
 
         String login = jwtService.obterLoginUsuario(token);
+        UsuarioEntity usuarioEntity = iUsuarioDataProvider.buscarPorEmail(login).orElse(null);
         UserDetails usuario = customUserDetailService.loadUserByUsername(login);
-        UsernamePasswordAuthenticationToken usuarioAutenticado = new UsernamePasswordAuthenticationToken(usuario, null, usuario.getAuthorities());
+        UsernamePasswordAuthenticationToken usuarioAutenticado = new UsernamePasswordAuthenticationToken(usuario, usuarioEntity.getId(), usuario.getAuthorities());
         usuarioAutenticado.setDetails(new WebAuthenticationDetailsSource().buildDetails(httpServletRequest));
         SecurityContextHolder.getContext().setAuthentication(usuarioAutenticado);
     }

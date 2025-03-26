@@ -29,7 +29,7 @@ public class LoginUseCase {
         validarEntrada(entrada);
 
         UsuarioEntity usuarioEntity = buscarUsuario(entrada);
-        UserDetails user = customUserDetailService.loadUserByUsername(usuarioEntity.getCpf());
+        UserDetails user = customUserDetailService.loadUserByUsername(usuarioEntity.getEmail());
         boolean senhasBatem = passwordEncoder.matches(entrada.getSenha(), user.getPassword());
 
         if (!senhasBatem) {
