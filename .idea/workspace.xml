@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b4a4f7-c78f-4bc5-b322-e23d606d1155" name="Changes" comment="[CONFIGURATION]: Configuração inicial Rabbitmq">
+    <list default="true" id="51b4a4f7-c78f-4bc5-b322-e23d606d1155" name="Changes" comment="[FEATURE]: Criação e configuração das filas da mesagem, criação do serviço de enviar mensagem, criação do processamento de mensagens, criação do projeto app">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/controller/mensagem/CriarMensagemController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/RabbitmlConfig.java" afterDir="false" />
@@ -15,6 +15,7 @@
       <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/mensagem/criar/CriarMensagemUseCase.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/domain/usecase/mensagem/processar/ProcessarMensagemUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/ProjetoMensageriaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/ProjetoMensageriaApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/mensagem/MensagemDataProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/adapter/gateway/dataprovider/mensagem/MensagemDataProviderImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-mensageria-api/src/main/java/br/com/projetomensageria/application/config/SecurityConfig.java" afterDir="false" />
@@ -116,7 +117,7 @@
       <workItem from="1742674787302" duration="363000" />
       <workItem from="1742676485810" duration="1051000" />
       <workItem from="1742863078967" duration="4777000" />
-      <workItem from="1742949709814" duration="2193000" />
+      <workItem from="1742949709814" duration="2682000" />
     </task>
     <task id="LOCAL-00001" summary="[CONFIGURATION]: Configuração inicial Rabbitmq">
       <option name="closed" value="true" />
@@ -126,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742073194691</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[FEATURE]: Criação e configuração das filas da mesagem, criação do serviço de enviar mensagem, criação do processamento de mensagens, criação do projeto app">
+      <option name="closed" value="true" />
+      <created>1742952392316</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742952392316</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[CONFIGURATION]: Configuração inicial Rabbitmq" />
-    <option name="LAST_COMMIT_MESSAGE" value="[CONFIGURATION]: Configuração inicial Rabbitmq" />
+    <MESSAGE value="[FEATURE]: Criação e configuração das filas da mesagem, criação do serviço de enviar mensagem, criação do processamento de mensagens, criação do projeto app" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FEATURE]: Criação e configuração das filas da mesagem, criação do serviço de enviar mensagem, criação do processamento de mensagens, criação do projeto app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
